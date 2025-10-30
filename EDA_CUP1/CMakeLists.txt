@@ -14,8 +14,5 @@ file(GLOB SAMPLE_SOURCE "*.cpp")
 
 add_executable(move_sample ${SAMPLE_SOURCE})
 
-target_include_directories(move_sample PRIVATE
-    "C:/dev/vcpkg/installed/x64-windows/include"
-)
-
 target_link_libraries(move_sample PRIVATE nlohmann_json::nlohmann_json)
+
